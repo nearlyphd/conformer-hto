@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  ml-lab:
+    build: .
+    container_name: ml_gpu_container
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+    ports:
+      - "8888:8888"
+
+    volumes:
+      - ./notebooks:/tf/notebooks
+      - ./data:/tf/data
+
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+      - TF_FORCE_GPU_ALLOW_GROWTH=true
+      - TF_CPP_MIN_LOG_LEVEL=2
+
+    command: >
+      bash -c "source /etc/bash.bashrc && jupyter notebook 
+      --notebook-dir=/tf 
+      --ip 0.0.0.0 
+      --no-browser 
+      --allow-root 
+      --NotebookApp.token=''"
+    # ------------------------
+
+    stdin_open: true
+    tty: true
