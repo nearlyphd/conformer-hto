@@ -208,3 +208,9 @@ __marimo__/
 
 # IDE configuration
 .idea/
+
+# Data folder
+data/
+
+# Models
+*.pth
