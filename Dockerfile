@@ -20,9 +20,6 @@ RUN pip install --upgrade pip
 # to ensure maximum compatibility.
 RUN pip install timm torch torchvision torchaudio
 
-# We force protobuf to be < 6.0.0 to make Tensorflow happy
-RUN pip install "protobuf<6.0.0"
-
 # Install Data Science & Visualization libraries
 RUN pip install \
     matplotlib \
