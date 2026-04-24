@@ -29,6 +29,8 @@ RUN pip install \
     tqdm \
     jupyterlab
 
+RUN pip install ultralytics
+
 # Expose Jupyter port
 EXPOSE 8888
 
