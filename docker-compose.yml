@@ -4,6 +4,7 @@ services:
   ml-lab:
     build: .
     container_name: ml_gpu_container
+    shm_size: 8GB
     deploy:
       resources:
         reservations:

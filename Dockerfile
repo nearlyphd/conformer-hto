@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y \
 RUN pip install --upgrade pip
 
 # Install PyTorch (Compatible with CUDA 11/12)
-# Note: TensorFlow docker images usually come with specific CUDA versions.
+# Note: TensorFlow docker xrays usually come with specific CUDA versions.
 # We install the standard PyTorch pip package which includes its own CUDA runtime
 # to ensure maximum compatibility.
 RUN pip install timm torch torchvision torchaudio
