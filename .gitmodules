@@ -1,0 +1,3 @@
+[submodule "notebooks/CKD"]
+	path = notebooks/CKD
+	url = https://github.com/nearlyphd/conformer-keypoint-detector
