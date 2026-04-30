@@ -213,4 +213,9 @@ __marimo__/
 data/
 
 # Models
+*.pt
 *.pth
+
+# Model artifacts
+notebooks/runs
+notebooks/yolo_data
