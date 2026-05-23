@@ -219,3 +219,6 @@ data/
 # Model artifacts
 notebooks/runs
 notebooks/yolo_data
+
+# SSH key
+runpod.pub
