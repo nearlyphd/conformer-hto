@@ -41,6 +41,7 @@ RUN pip install \
     jupyterlab
 
 RUN pip install ultralytics
+RUN pip install opencv-python-headless
 
 # Expose ports
 EXPOSE 8888
