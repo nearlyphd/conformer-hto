@@ -43,6 +43,12 @@ RUN pip install \
 RUN pip install ultralytics
 RUN pip install opencv-python-headless
 
+# Copy X-ray images into the container
+COPY data/hto/xrays/ /tf/data/hto/xrays/
+
+# Copy Conformer library
+COPY notebooks/CKD/ /tf/notebooks/CKD/
+
 # Expose ports
 EXPOSE 8888
 EXPOSE 22
