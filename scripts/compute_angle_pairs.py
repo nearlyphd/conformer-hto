@@ -48,7 +48,7 @@ from PIL import Image
 from torch.utils.data import DataLoader, Dataset
 
 # ============================================================ CONFIG -- EDIT ME
-CKD_PATH = "CKD"                              # path to the CKD repo (has models.py, utils.py)
+CKD_PATH = "../notebooks/CKD"  # path to the CKD repo (has models.py, utils.py)
 DATA_DIR = "/tf/data/hto/xrays"
 COCO_JSON_PATH = os.path.join(DATA_DIR, "hto_annotations.json")
 if not os.path.exists(COCO_JSON_PATH):
