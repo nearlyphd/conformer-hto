@@ -43,6 +43,7 @@ RUN pip install \
 RUN pip install ultralytics
 RUN pip install opencv-python-headless
 RUN pip install pydicom
+RUN pip install pingouin
 
 # Copy X-ray images into the container
 COPY data/hto/xrays/ /tf/data/hto/xrays/
