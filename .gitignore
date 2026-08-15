@@ -222,3 +222,4 @@ notebooks/yolo_data
 
 # SSH key
 runpod.pub
+/oblation_models/
