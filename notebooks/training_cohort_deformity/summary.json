@@ -1,0 +1,46 @@
+{
+  "annotations": "/tf/data/hto/xrays/hto_annotations.json",
+  "radiographs": 54,
+  "limbs": 107,
+  "neutral_band_deg": 3.0,
+  "hka": {
+    "mean": -3.52,
+    "sd": 5.118,
+    "min": -21.606,
+    "max": 7.317,
+    "median": -3.78,
+    "p5": -11.926,
+    "p95": 4.972
+  },
+  "class_counts": {
+    "varus": 59,
+    "normal": 34,
+    "valgus": 14
+  },
+  "classes_absent": [],
+  "correction_angle": {
+    "mean": 6.917,
+    "min": 0.457,
+    "max": 24.82
+  },
+  "interobserver_hka_sd": 0.2305,
+  "interobserver_hka_icc": 0.9974,
+  "laterality_flips": 0,
+  "domain_overlap": {
+    "varus": {
+      "oai_knees": 2007,
+      "pct_inside_training_range": 100.0,
+      "training_limbs": 59
+    },
+    "normal": {
+      "oai_knees": 4533,
+      "pct_inside_training_range": 100.0,
+      "training_limbs": 34
+    },
+    "valgus": {
+      "oai_knees": 632,
+      "pct_inside_training_range": 88.61,
+      "training_limbs": 14
+    }
+  }
+}

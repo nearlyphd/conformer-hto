@@ -1,0 +1,4 @@
+stratum,oai_knees,pct_inside_training_range,median_dist_outside,max_dist_outside,training_limbs
+varus,2007,100.0,0.0,0.0,59
+normal,4533,100.0,0.0,0.0,34
+valgus,632,88.60759493670885,1.1768153545345337,11.5434820212012,14
