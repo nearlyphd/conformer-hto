@@ -1,0 +1,88 @@
+{
+  "generated": "2026-08-23T16:27:55",
+  "checkpoint": "/tf/notebooks/kfolds_models/best_model_global.pt",
+  "model_variant": "small_p16",
+  "neutral_band_deg": 3.0,
+  "exclude_abs_dev_deg": 25.0,
+  "cluster_unit": "subj",
+  "n_boot": 2000,
+  "knees_total": 7647,
+  "knees_analysed": 7172,
+  "failure_pct": 6.2115862429711,
+  "oai_inter_reader_sd": 0.298,
+  "per_stratum": {
+    "POOLED": {
+      "n": 7172,
+      "mae": 1.436,
+      "mae_ci": [
+        1.387,
+        1.489
+      ],
+      "bias": -0.32,
+      "loa": [
+        -5.12,
+        4.48
+      ],
+      "icc": 0.754,
+      "failure_pct": 6.21
+    },
+    "varus": {
+      "n": 2007,
+      "mae": 1.476,
+      "mae_ci": [
+        1.389,
+        1.571
+      ],
+      "bias": 0.444,
+      "loa": [
+        -4.31,
+        5.2
+      ],
+      "icc": 0.501,
+      "failure_pct": 6.87
+    },
+    "normal": {
+      "n": 4533,
+      "mae": 1.36,
+      "mae_ci": [
+        1.302,
+        1.419
+      ],
+      "bias": -0.505,
+      "loa": [
+        -5.06,
+        4.05
+      ],
+      "icc": 0.42,
+      "failure_pct": 5.99
+    },
+    "valgus": {
+      "n": 632,
+      "mae": 1.859,
+      "mae_ci": [
+        1.656,
+        2.065
+      ],
+      "bias": -1.412,
+      "loa": [
+        -6.75,
+        3.93
+      ],
+      "icc": 0.42,
+      "failure_pct": 5.67
+    }
+  },
+  "triage": {
+    "accuracy": 0.8062,
+    "balanced_accuracy": 0.7513,
+    "kappa": 0.6268,
+    "kappa_linear": 0.6549,
+    "auc_varus": 0.915,
+    "auc_valgus": 0.9377
+  },
+  "proportional_bias_slope": [
+    -0.1935,
+    -0.2119,
+    -0.1752
+  ]
+}
