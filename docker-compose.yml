@@ -20,6 +20,7 @@ services:
       - ./scripts:/tf/scripts
       - ./notebooks:/tf/notebooks
       - ./data:/tf/data
+      - ./weights:/tf/weights
 
     environment:
       - NVIDIA_VISIBLE_DEVICES=all
