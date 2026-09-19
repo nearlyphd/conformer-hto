@@ -1,0 +1,62 @@
+{
+  "evaluated_at": "2026-09-19T11:46:24",
+  "checkpoint": {
+    "file": "best_model_global.pt",
+    "path": "/tf/weights/best_model_global.pt",
+    "bytes": 170731066,
+    "modified": "2026-06-22T10:24:47",
+    "sha256": "20cb99afb0f7455d3c2a71494b586930439b761bbb23482d1d05a977955186d0",
+    "expected_sha256": "20cb99afb0f7455d3c2a71494b586930439b761bbb23482d1d05a977955186d0",
+    "matches_expected": true,
+    "other_copies": [
+      {
+        "path": "/tf/notebooks/kfolds_models/best_model_global.pt",
+        "sha256": "20cb99afb0f7455d3c2a71494b586930439b761bbb23482d1d05a977955186d0",
+        "same_as_evaluated": true
+      }
+    ]
+  },
+  "test_split": {
+    "files": [
+      "30_0.png",
+      "32_0.png",
+      "69_0.png",
+      "13_0.png",
+      "20_0.png",
+      "59_0.png"
+    ],
+    "sha256": "8722c0823d711dd5aa7afd09b877b9add4da64c7b9035f4f57005b8c33c87a06",
+    "n_radiographs": 6,
+    "n_hemispheres": 12,
+    "seed": 42,
+    "split_ratios": [
+      0.8,
+      0.1,
+      0.1
+    ]
+  },
+  "environment": {
+    "torch": "2.5.1+cu121",
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU"
+  },
+  "results": {
+    "label": "Held-out test split \u2014 best_model_global.pt (20cb99afb0f7\u2026)",
+    "n": 12,
+    "mean": 0.4124379365842312,
+    "median": 0.31556896660494327,
+    "std": 0.3531699778953411,
+    "min": 0.024628117530264504,
+    "max": 1.3416467961896403,
+    "rmse": 0.5333291654440415,
+    "within_tol_pct": 100.0,
+    "icc": 0.9893971787536856,
+    "icc_lo": 0.96,
+    "icc_hi": 1.0,
+    "ba_bias": -0.047427159445821154,
+    "ba_loa_low": -1.134908144598781,
+    "ba_loa_high": 1.0400538257071388,
+    "pearson": 0.9887312326919967
+  },
+  "reproduces": []
+}

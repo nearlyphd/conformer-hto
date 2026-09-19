@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-23T16:27:55",
+  "generated": "2026-08-23T17:38:33",
   "checkpoint": "/tf/notebooks/kfolds_models/best_model_global.pt",
   "model_variant": "small_p16",
   "neutral_band_deg": 3.0,
@@ -10,8 +10,19 @@
   "knees_analysed": 7172,
   "failure_pct": 6.2115862429711,
   "oai_inter_reader_sd": 0.298,
+  "train_domain": {
+    "varus": "in-domain",
+    "normal": "OUT-of-domain",
+    "valgus": "OUT-of-domain"
+  },
+  "compression": {
+    "intercept": -0.559,
+    "lam": 0.8065,
+    "fixed_point": -2.889
+  },
   "per_stratum": {
     "POOLED": {
+      "domain": "mixed",
       "n": 7172,
       "mae": 1.436,
       "mae_ci": [
@@ -27,6 +38,7 @@
       "failure_pct": 6.21
     },
     "varus": {
+      "domain": "in-domain",
       "n": 2007,
       "mae": 1.476,
       "mae_ci": [
@@ -42,6 +54,7 @@
       "failure_pct": 6.87
     },
     "normal": {
+      "domain": "OUT-of-domain",
       "n": 4533,
       "mae": 1.36,
       "mae_ci": [
@@ -57,6 +70,7 @@
       "failure_pct": 5.99
     },
     "valgus": {
+      "domain": "OUT-of-domain",
       "n": 632,
       "mae": 1.859,
       "mae_ci": [
