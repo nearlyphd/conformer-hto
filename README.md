@@ -1,6 +1,10 @@
 # Conformer HTO
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22922512.svg)](https://doi.org/10.5281/zenodo.22922511)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C.svg?logo=pytorch&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626.svg?logo=jupyter&logoColor=white)
 
 
 **Automatic measurement of the High Tibial Osteotomy (HTO) correction angle from long-leg radiographs, using a one-stage Conformer keypoint detector.**
